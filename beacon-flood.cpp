@@ -68,10 +68,6 @@ int main(int argc, char *argv[]){
     vthread.push_back(shared_ptr<thread>(th));
     vthread.push_back(shared_ptr<thread>(th));
 
-	for(auto item : vthread){
-		item->join();
-	}
-
     printf("Press any key to exit\n");
     getchar();
 
